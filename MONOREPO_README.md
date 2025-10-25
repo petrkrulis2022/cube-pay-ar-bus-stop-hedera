@@ -25,8 +25,9 @@ cube-pay-ar-bus-stop-hedera/
 **Bus Stop Agent Demo for Hedera Hackathon**
 
 This project demonstrates:
+
 - 🚌 **Bus Stop Agent** - Provides transit information and recommendations
-- ✈️ **Travel Agent** - Books flights and provides travel services  
+- ✈️ **Travel Agent** - Books flights and provides travel services
 - 💬 **A2A Messaging** - Agent-to-Agent communication using Hedera
 - 💰 **Multi-Agent Payments** - Dynamic fee splitting between multiple agents
 - 🌐 **Multi-Chain Support** - EVM, Solana, and **Hedera** wallets
@@ -34,6 +35,7 @@ This project demonstrates:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - npm or yarn
 - Supabase account
@@ -42,11 +44,13 @@ This project demonstrates:
 ### Installation
 
 1. **Install Frontend Dependencies**
+
 ```bash
 npm install
 ```
 
 2. **Install Backend Dependencies**
+
 ```bash
 cd agentsphere-backend
 npm install
@@ -56,12 +60,14 @@ cd ..
 3. **Configure Environment Variables**
 
 Create `.env` in root for frontend:
+
 ```env
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_key
 ```
 
 Create `.env` in `agentsphere-backend/` for backend:
+
 ```env
 SUPABASE_URL=your_supabase_url
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
@@ -72,12 +78,14 @@ HEDERA_PRIVATE_KEY=your_hedera_private_key
 ### Running the Application
 
 **Frontend (AR Viewer)**
+
 ```bash
 npm run dev
 # Runs on http://localhost:5173
 ```
 
 **Backend (AgentSphere)**
+
 ```bash
 cd agentsphere-backend
 npm run dev
@@ -87,6 +95,7 @@ npm run dev
 ## 🎨 Key Features
 
 ### Bus Stop Agent Flow
+
 1. User scans AR marker at bus stop
 2. Bus Stop Agent appears in AR
 3. User asks about transportation to airport
@@ -95,11 +104,13 @@ npm run dev
 6. Dynamic payment split between agents
 
 ### Payment Options
+
 - 💳 **Revolut Virtual Card** - Dynamic fee splitting
 - 🔗 **Crypto QR Codes** - Blockchain payments
 - 🤖 **Autonomous Payment** - Agent handles payment automatically
 
 ### Supported Networks
+
 - **EVM**: Ethereum, Polygon, Base Sepolia, Morph, Etherlink
 - **Solana**: Devnet/Mainnet
 - **Hedera**: Testnet/Mainnet (NEW!)
@@ -107,6 +118,7 @@ npm run dev
 ## 🔧 Development
 
 ### Branch Strategy
+
 - `master` - Main development branch
 - Features developed directly on master
 - Source: `revolut-qr-payments-sim-dynamimic-online-payments` (dynamic fees)
@@ -114,6 +126,7 @@ npm run dev
 ### Tech Stack
 
 **Frontend:**
+
 - React + Vite
 - Three.js (@react-three/fiber) for AR
 - Tailwind CSS
@@ -122,6 +135,7 @@ npm run dev
 - Hedera Wallet Connect (planned)
 
 **Backend:**
+
 - Express.js
 - Supabase (PostgreSQL)
 - Hedera Agent Kit (planned)
@@ -130,11 +144,13 @@ npm run dev
 ## 📦 Deployment
 
 ### Frontend
+
 - Deploy to Netlify/Vercel
 - Build: `npm run build`
 - Output: `dist/`
 
 ### Backend
+
 - Deploy to Railway/Render/Fly.io
 - Ensure Hedera environment variables are set
 - Database migrations run automatically
@@ -142,12 +158,15 @@ npm run dev
 ## 🌟 Hedera Integration
 
 ### Agent Deployment
+
 Agents will be deployed on AgentSphere backend with:
+
 - Hedera Agent Kit installed
 - Individual Hedera wallet addresses
 - A2A messaging endpoints configured
 
 ### User Interaction
+
 - User connects Hedera wallet in AR Viewer
 - AR Viewer communicates with deployed agents via HTTP
 - Agents handle Hedera transactions on backend
@@ -156,6 +175,7 @@ Agents will be deployed on AgentSphere backend with:
 ## 📚 Documentation
 
 See individual documentation files:
+
 - `AR_VIEWER_*.md` - AR Viewer specific docs
 - `REVOLUT_*.md` - Revolut payment integration
 - `HEDERA_*.md` - Hedera integration docs
@@ -164,6 +184,7 @@ See individual documentation files:
 ## 🤝 Contributing
 
 This is a hackathon submission repository. For questions:
+
 - GitHub: [@petrkrulis2022](https://github.com/petrkrulis2022)
 
 ## 📄 License
